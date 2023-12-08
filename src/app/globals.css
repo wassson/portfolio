@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* CabinetGrotesk */
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('/fonts/CabinetGrotesk/CabinetGrotesk-Light.woff2');
+  font-weight: 100;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('/fonts/CabinetGrotesk/CabinetGrotesk-Regular.woff2');
+  font-weight: 300;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('/fonts/CabinetGrotesk/CabinetGrotesk-Medium.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('/fonts/CabinetGrotesk/CabinetGrotesk-Bold.woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('/fonts/CabinetGrotesk/CabinetGrotesk-Extrabold.woff2');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('/fonts/CabinetGrotesk/CabinetGrotesk-Black.woff2');
+  font-weight: 900;
+}
+
+/* Lato */
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Thin.tff');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Light.tff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Regular.tff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Bold.tff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Black.tff');
+  font-weight: 900;
 }
