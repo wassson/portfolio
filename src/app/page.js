@@ -77,8 +77,8 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h4 className='text-lg font-heading font-bold'><span className='text-neutral-400'>wassson/</span>tailor</h4>
-                <p className='-mt-1.5 text-sm'>Code reviews from the command line.</p>
+                <h4 className='text-lg font-heading font-bold'>Local AI models with Ollama</h4>
+                <p className='-mt-1.5 text-sm'>Code review from the command line.</p>
               </div>
             </div>
           </div>
