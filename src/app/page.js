@@ -1,85 +1,322 @@
+import Months from '@/components/Months'
+import January from '@/components/calendar/January'
+import Month from '@/components/calendar/Month'
+import December from '@/components/calendar/december'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="h-screen w-screen py-12 bg-neutral-950 text-white">
-      <div className="grid grid-cols-6">
-        <div className="flex flex-col gap-y-3 col-span-2 col-start-3">
-          <div className="p-3 bg-neutral-900 rounded-xl">
-            <div className="flex items-center gap-x-3">
-              <div className="relative w-10 h-10 bg-sky-200 rounded-full">
-                <Image 
-                  src="/images/me.png"
-                  layout="fill"
-                  className='mt-1'
-                />
+    <main className="h-screen w-screen bg-neutral-950 text-white">
+      <div className="flex flex-col h-full">
+        <div>
+          <Months />
+          <div className="grid grid-cols-12 w-screen p-3 cursor-pointer">
+            <January />
+            <Month />
+            <div className="grid grid-cols-10">
+              <div className="flex justify-center">
+                <div className="h-9 w-0.5 bg-white"></div>
               </div>
-              <div>
-                <h4 className='text-lg font-heading font-bold'>Austin Wasson</h4>
-                <p className='-mt-1.5 text-sm text-neutral-400'>austinpwasson@gmail.com</p>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-white group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
-            </div>
-          </div>
-          <h4 className='-mb-1.5 ml-3 font-heading font-bold'>🤖 Code</h4>
-          <div className="p-3 bg-neutral-900 rounded-xl">
-            <div className="flex items-center gap-x-3">
-            <div className="relative w-10 h-10 bg-neutral-700 rounded-full">
-                <Image 
-                  src="/icons/github-icon-white.png"
-                  layout="fill"
-                  className='p-1.5'
-                />
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-white group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
-              <div>
-                <h4 className='text-lg font-heading font-bold'><span className='text-neutral-400'>wassson/</span>tailor</h4>
-                <p className='-mt-1.5 text-sm'>Code reviews from the command line.</p>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-white group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
-            </div>
-          </div>
-          <div className="p-3 bg-neutral-900 rounded-xl">
-            <div className="flex items-center gap-x-3">
-              <div className="relative w-10 h-10 bg-neutral-700 rounded-full">
-                <Image 
-                  src="/icons/github-icon-white.png"
-                  layout="fill"
-                  className='p-1.5'
-                />
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-white group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
-              <div>
-                <h4 className='text-lg font-heading font-bold'><span className='text-neutral-400'>wassson/</span>tik</h4>
-                <p className='-mt-1.5 text-sm'>An experiment in version control.</p>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-red-400 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
             </div>
-          </div>
-          <div className="p-3 bg-neutral-900 rounded-xl">
-            <div className="flex items-center gap-x-3">
-              <div className="relative w-10 h-10 bg-neutral-700 rounded-full">
-                <Image 
-                  src="/icons/github-icon-white.png"
-                  layout="fill"
-                  className='p-1.5'
-                />
+            <div className="grid grid-cols-10">
+              <div className="flex justify-center">
+                <div className="h-9 w-0.5 bg-neutral-900"></div>
               </div>
-              <div>
-                <h4 className='text-lg font-heading font-bold'><span className='text-neutral-400'>wassson/</span>commonk</h4>
-                <p className='-mt-1.5 text-sm'>Plug and play command palette.</p>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
             </div>
+            <div className="grid grid-cols-10">
+              <div className="flex justify-center">
+                <div className="h-9 w-0.5 bg-neutral-900"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-10">
+              <div className="flex justify-center">
+                <div className="h-9 w-0.5 bg-neutral-900"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-10">
+              <div className="flex justify-center">
+                <div className="h-9 w-0.5 bg-neutral-900"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-10">
+              <div className="flex justify-center">
+                <div className="h-9 w-0.5 bg-neutral-900"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-10">
+              <div className="flex justify-center">
+                <div className="h-9 w-0.5 bg-neutral-900"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-10">
+              <div className="flex justify-center">
+                <div className="h-9 w-0.5 bg-neutral-900"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-10">
+              <div className="flex justify-center">
+                <div className="h-9 w-0.5 bg-neutral-900"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+              <div className="group flex justify-center">
+                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+              </div>
+            </div>
+            <December />
           </div>
-          <h4 className='-mb-1.5 ml-3 font-heading font-bold'>✏️ Writing</h4>
-          <div className="p-3 bg-neutral-900 rounded-xl">
-            <div className="flex items-center gap-x-3">
-            <div className="relative w-10 h-10 bg-neutral-700 rounded-full">
-                <Image 
-                  src="/icons/github-icon-white.png"
-                  layout="fill"
-                  className='p-1.5'
-                />
-              </div>
-              <div>
-                <h4 className='text-lg font-heading font-bold'>Local AI models with Ollama</h4>
-                <p className='-mt-1.5 text-sm'>Code review from the command line.</p>
-              </div>
+        </div>
+        <div className="flex-grow"></div>
+        <div className='p-3'>
+          <div className="flex items-center gap-x-3">
+            <div className="relative w-10 h-10 bg-sky-200 rounded-full">
+              <Image 
+                src="/images/me.png"
+                layout="fill"
+                className='mt-1'
+              />
+            </div>
+            <div>
+              <h4 className='text-lg font-heading font-bold'>Austin Wasson</h4>
+              <p className='-mt-1.5 text-sm text-neutral-400'>austinpwasson@gmail.com</p>
             </div>
           </div>
         </div>
