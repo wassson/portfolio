@@ -2,7 +2,7 @@ import Months from '@/components/Months'
 import January from '@/components/calendar/January'
 import Month from '@/components/calendar/Month'
 import December from '@/components/calendar/december'
-import Image from 'next/image'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
                 <div className="h-6 w-0.5 bg-white group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
               <div className="group flex justify-center">
-                <div className="h-6 w-0.5 bg-red-400 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+                <div className="h-6 w-0.5 bg-sky-300 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
               <div className="group flex justify-center">
                 <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
@@ -181,7 +181,7 @@ export default function Home() {
                 <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
               <div className="group flex justify-center">
-                <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
+                <div className="h-6 w-0.5 bg-amber-400 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
               </div>
               <div className="group flex justify-center">
                 <div className="h-6 w-0.5 bg-neutral-900 group-hover:bg-gradient-to-b group-hover:from-indigo-400 group-hover:to-pink-600 transform duration-100"></div>
@@ -305,21 +305,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex-grow"></div>
-        <div className='p-3'>
-          <div className="flex items-center gap-x-3">
-            <div className="relative w-10 h-10 bg-sky-200 rounded-full">
-              <Image 
-                src="/images/me.png"
-                layout="fill"
-                className='mt-1'
-              />
-            </div>
-            <div>
-              <h4 className='text-lg font-heading font-bold'>Austin Wasson</h4>
-              <p className='-mt-1.5 text-sm text-neutral-400'>austinpwasson@gmail.com</p>
-            </div>
-          </div>
-        </div>
+        <Footer />
       </div>
     </main>
   )
